@@ -6,7 +6,13 @@ export default {
     "./**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        slate: {
+          950: '#020617',
+        }
+      }
+    },
   },
   plugins: [],
 }

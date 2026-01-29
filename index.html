@@ -6,44 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIRE 财富自由倒计时</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        slate: {
-                            950: '#020617',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <style type="text/tailwindcss">
-        @layer base {
-            body {
-                @apply bg-slate-950 text-slate-50 antialiased;
-                font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            }
-        }
-        @layer components {
-            .glass-panel {
-                @apply bg-slate-900/40 backdrop-blur-xl border border-white/10 shadow-2xl transition-all duration-300;
-            }
-            .glass-panel:hover {
-                @apply border-white/20 bg-slate-900/50;
-            }
-            .text-gradient {
-                background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-            .input-field {
-                @apply bg-slate-800/50 border border-slate-700 rounded-xl px-4 py-2.5 focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500 outline-none transition-all;
-            }
-        }
-    </style>
 <script type="importmap">
 {
   "imports": {
@@ -57,7 +19,7 @@
 }
 </script>
 </head>
-<body>
+<body class="bg-slate-950 text-slate-50 antialiased">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
 </body>
